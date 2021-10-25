@@ -52,7 +52,7 @@
             Context.strokeStyle = "#000";
             Context.lineWidth = 1;
             Context.strokeRect(0, 0, myCanvas.width - 1, myCanvas.height - 1);
-            Context.fillStyle = "blue";
+            Context.fillStyle = "white";
             Context.fillRect(1, 1, myCanvas.width - 2, myCanvas.height - 2);
             for (i = 0; i < Circles.length; ++i) {
                 Context.beginPath();
@@ -66,6 +66,7 @@
                     0,				// 원호의 시작
                     Math.PI * 2		// 원호의 끝
                 );
+                Context.fillStyle = "violet"
                 Context.closePath();
                 Context.stroke();
             }
